@@ -1,0 +1,27 @@
+import styled from "styled-components";
+
+import { Props } from "./index";
+
+export const Card = styled.div<Props>`
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid
+    ${(props) =>
+      props.active ? "var(--color-blue-600)" : "var(--color-gray-500)"};
+
+  background-color: ${(props) =>
+    props.active ? "var(--color-white)" : "var(--color-gray-300)"};
+
+  color: ${(props) =>
+    props.active ? "var(--color-blue-600)" : "var(--color-gray-700)"};
+`;
+
+export const Counter = styled.span`
+  font-weight: 700;
+  font-size: 24px;
+  display: block;
+`;
+
+export const Label = styled.span`
+  font-size: 14px;
+`;

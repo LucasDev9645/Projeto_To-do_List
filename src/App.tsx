@@ -1,7 +1,7 @@
 import SideBar from "./components/SideBar";
 import TodoList from "./components/TodoList";
 
-import GlobalStyle, { Container } from "./styles";
+import GlobalStyle, { Container } from "./styles/styles";
 
 const App = () => {
   return (
