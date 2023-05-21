@@ -1,10 +1,16 @@
-import GlobalStyle from "./styles";
+import SideBar from "./components/SideBar";
+import TodoList from "./components/TodoList";
+
+import GlobalStyle, { Container } from "./styles";
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <h1>Testando</h1>
+      <Container>
+        <SideBar />
+        <TodoList />
+      </Container>
     </>
   );
 };
