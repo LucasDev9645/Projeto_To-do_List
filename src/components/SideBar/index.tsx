@@ -8,12 +8,12 @@ const SideBar = () => {
       <div>
         <S.Field type="text" placeholder="Buscar" />
         <S.Filters>
-          <FilterCard />
-          <FilterCard />
-          <FilterCard />
-          <FilterCard />
-          <FilterCard active />
-          <FilterCard />
+          <FilterCard subtitle="Pendentes" counter={1} />
+          <FilterCard subtitle="Concluídas" counter={2} />
+          <FilterCard subtitle="Urgentes" counter={3} />
+          <FilterCard subtitle="Importantes" counter={4} />
+          <FilterCard subtitle="Normal" counter={5} />
+          <FilterCard subtitle="Todas" counter={10} active />
         </S.Filters>
       </div>
     </S.Aside>

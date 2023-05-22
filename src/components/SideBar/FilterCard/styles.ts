@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 import { Props } from "./index";
 
-export const Card = styled.div<Props>`
+type PropsWithoutSubtitleCounter = Omit<Props, "counter" | "subtitle">;
+
+export const Card = styled.div<PropsWithoutSubtitleCounter>`
   padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid
