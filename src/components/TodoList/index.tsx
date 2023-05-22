@@ -1,8 +1,29 @@
+import Task from "../Task";
+
+import { Container } from "./styles";
+
 const TodoList = () => {
   return (
-    <main>
+    <Container>
       <p>2 tarefas marcadas como : "categoria" e "termo"</p>
-    </main>
+      <ul>
+        <li>
+          <Task />
+        </li>
+        <li>
+          <Task />
+        </li>
+        <li>
+          <Task />
+        </li>
+        <li>
+          <Task />
+        </li>
+        <li>
+          <Task />
+        </li>
+      </ul>
+    </Container>
   );
 };
 
