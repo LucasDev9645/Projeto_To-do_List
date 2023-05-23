@@ -6,19 +6,19 @@ const task = [
   {
     title: "Estudar React",
     description: "Ver aula do modulo 30 Ebac",
-    priority: "alta",
+    priority: "urgente",
     status: "pendente",
   },
   {
     title: "Estudar JavaScript",
     description: "Ver aula do modulo 30 Ebac",
-    priority: "alta",
-    status: "concluida",
+    priority: "importante",
+    status: "concluída",
   },
   {
     title: "Sass",
     description: "Ver aula do modulo 30 Ebac",
-    priority: "alta",
+    priority: "urgente",
     status: "pendente",
   },
 ];
