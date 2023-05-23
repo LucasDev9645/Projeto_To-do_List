@@ -1,17 +1,24 @@
+import * as enums from "../../utils/enums/Tasks";
+
 import styled from "styled-components";
 
 type TagProps = {
-  priority?: string;
-  status?: string;
+  priority?: enums.Priority;
+  status?: enums.Status;
+  parameter: "status" | "priority";
 };
 
 const returnBackgroundColor = (props: TagProps): string => {
-  if ("status" in props) {
-    if (props.status === "pendente") return "var(--color-yellow-400)";
-    if (props.status === "concluída") return "var(--color-green-500)";
-  } else if ("priority" in props) {
-    if (props.priority === "urgente") return "var(--color-red-600)";
-    if (props.priority === "importante") return "var(--color-yellow-600)";
+  if (props.parameter === "priority") {
+    if (props.priority === enums.Priority.URGENTE)
+      return "var(--color-red-600)";
+    if (props.priority === enums.Priority.IMPORTANTE)
+      return "var(--color-yellow-600)";
+  } else {
+    if (props.status === enums.Status.PENDENTE)
+      return "var(--color-yellow-400)";
+    if (props.status === enums.Status.CONCLUIDA)
+      return "var(--color-green-500)";
   }
   return "var(--color-gray-500)";
 };

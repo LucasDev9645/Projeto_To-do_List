@@ -1,4 +1,5 @@
 import Task from "../Task";
+import * as enums from "../../utils/enums/Tasks";
 
 import { Container } from "./styles";
 
@@ -6,20 +7,20 @@ const task = [
   {
     title: "Estudar React",
     description: "Ver aula do modulo 30 Ebac",
-    priority: "urgente",
-    status: "pendente",
+    priority: enums.Priority.URGENTE,
+    status: enums.Status.PENDENTE,
   },
   {
     title: "Estudar JavaScript",
     description: "Ver aula do modulo 30 Ebac",
-    priority: "importante",
-    status: "concluída",
+    priority: enums.Priority.IMPORTANTE,
+    status: enums.Status.CONCLUIDA,
   },
   {
     title: "Sass",
     description: "Ver aula do modulo 30 Ebac",
-    priority: "urgente",
-    status: "pendente",
+    priority: enums.Priority.URGENTE,
+    status: enums.Status.PENDENTE,
   },
 ];
 
