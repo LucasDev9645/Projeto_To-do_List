@@ -7,12 +7,19 @@ import { Container } from "./styles";
 
 const TodoList = () => {
   const { itens } = useSelector((state: RootReducer) => state.tasks);
+  const { term } = useSelector((state: RootReducer) => state.filter);
+
+  const taskFilter = () => {
+    return itens.filter(
+      (item) => item.title.toLowerCase().search(term.toLowerCase()) >= 0
+    );
+  };
 
   return (
     <Container>
-      <p>2 tarefas marcadas como : "categoria" e "termo"</p>
+      <p>2 tarefas marcadas como : "categoria" e "{term}"</p>
       <ul>
-        {itens.map((task) => (
+        {taskFilter().map((task) => (
           <li key={task.title}>
             <Task
               id={task.id}
