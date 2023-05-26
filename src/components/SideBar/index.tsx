@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import FilterCard from "./FilterCard";
 
 import * as S from "./styles";
+import * as enums from "../../utils/enums/Tasks";
 import { useSelector } from "react-redux";
 import { RootReducer } from "../../Store";
 import { changeTerm } from "../../Store/reducers/filter";
@@ -21,12 +22,32 @@ const SideBar = () => {
           onChange={(e) => dispatch(changeTerm(e.target.value))}
         />
         <S.Filters>
-          <FilterCard subtitle="Pendentes" counter={1} />
-          <FilterCard subtitle="Concluídas" counter={2} />
-          <FilterCard subtitle="Urgentes" counter={3} />
-          <FilterCard subtitle="Importantes" counter={4} />
-          <FilterCard subtitle="Normal" counter={5} />
-          <FilterCard subtitle="Todas" counter={10} active />
+          <FilterCard
+            value={enums.Status.PENDENTE}
+            criterion="status"
+            subtitle="Pendentes"
+          />
+          <FilterCard
+            value={enums.Status.CONCLUIDA}
+            criterion="status"
+            subtitle="Concluídas"
+          />
+          <FilterCard
+            value={enums.Priority.URGENTE}
+            criterion="priority"
+            subtitle="Urgentes"
+          />
+          <FilterCard
+            value={enums.Priority.IMPORTANTE}
+            criterion="priority"
+            subtitle="Importantes"
+          />
+          <FilterCard
+            value={enums.Priority.NORMAL}
+            criterion="priority"
+            subtitle="Normal"
+          />
+          <FilterCard criterion="all" subtitle="Todas" />
         </S.Filters>
       </div>
     </S.Aside>
