@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import Task from "../Task";
 import { RootReducer } from "../../Store";
 
-import { Container, Result } from "./styles";
+import { MainContainer, Title } from "../../styles/styles";
 
 const TodoList = () => {
   const { itens } = useSelector((state: RootReducer) => state.tasks);
@@ -47,8 +47,8 @@ const TodoList = () => {
   const message = ShowFilteringResult(tasks.length);
 
   return (
-    <Container>
-      <Result>{message}</Result>
+    <MainContainer>
+      <Title as={"p"}>{message}</Title>
       <ul>
         {tasks.map((task) => (
           <li key={task.title}>
@@ -62,7 +62,7 @@ const TodoList = () => {
           </li>
         ))}
       </ul>
-    </Container>
+    </MainContainer>
   );
 };
 

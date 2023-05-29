@@ -1,5 +1,13 @@
+import Form from "../../components/Form";
+import SideBar from "../../components/SideBar";
+
 const Register = () => {
-  return <div>Register</div>;
+  return (
+    <>
+      <SideBar />
+      <Form />
+    </>
+  );
 };
 
 export default Register;

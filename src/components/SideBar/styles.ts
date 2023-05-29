@@ -12,12 +12,3 @@ export const Filters = styled.aside`
   grid-gap: 0.5rem;
   margin-top: 1rem;
 `;
-
-export const Field = styled.input`
-  border-radius: 5px;
-  border-color: var(--color-gray-600);
-  background-color: var(--color-white);
-  padding: 0.5rem;
-  font-weight: 700;
-  width: 100%;
-`;

@@ -1,4 +1,5 @@
 import { createGlobalStyle, styled } from "styled-components";
+import { Button } from "../components/Task/styles";
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -38,4 +39,30 @@ export const Container = styled.div`
   grid-template-columns: 14rem auto;
 `;
 
+export const MainContainer = styled.main`
+  padding: 0 2.5rem;
+  height: 100vh;
+  overflow-y: scroll;
+`;
+
+export const Title = styled.h2`
+  display: block;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+`;
+
+export const Field = styled.input`
+  border-radius: 5px;
+  border-color: var(--color-gray-600);
+  background-color: var(--color-white);
+  padding: 0.5rem;
+  font-weight: 700;
+  width: 100%;
+`;
+
+export const SaveButton = styled(Button)`
+  background-color: var(--color-green-500);
+`;
 export default GlobalStyle;
