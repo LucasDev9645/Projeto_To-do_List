@@ -4,9 +4,9 @@
 
 # Sobre o projeto
 
-To-do List é uma aplicação frontend web que esta sendo construída com intuito de praticar e aprender mais sobre o react, rotas, e estilos de uma forma mais elegante.
+To-do List é uma aplicação frontend web que foi feita em curso, teve o intuito de praticar e aprender mais sobre o react, rotas, redux, typescript e styled-components, foi um projeto que me trouxe bastante conhecimento.
 
-A aplicação é um To-do List, onde podemos salvar tarefas, editar, apagar, colocar prioridades.
+A aplicação é um To-do List, onde podemos salvar tarefas, editar, apagar, colocar prioridades, marca tarefa como concluída.
 
 ## Layout web
 ![Web 1](https://github.com/LucasDev9645/Images_Readme/blob/main/todolist1.png)
