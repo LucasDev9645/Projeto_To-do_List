@@ -4,6 +4,8 @@
 
 # Sobre o projeto
 
+https://projeto-to-do-list-eight.vercel.app/
+
 To-do List é uma aplicação frontend web que foi feita em curso, teve o intuito de praticar e aprender mais sobre o react, rotas, redux, typescript e styled-components, foi um projeto que me trouxe bastante conhecimento.
 
 A aplicação é um To-do List, onde podemos salvar tarefas, editar, apagar, colocar prioridades, marca tarefa como concluída.
