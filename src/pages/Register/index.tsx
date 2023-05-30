@@ -4,7 +4,7 @@ import SideBar from "../../components/SideBar";
 const Register = () => {
   return (
     <>
-      <SideBar />
+      <SideBar showFilters={false} />
       <Form />
     </>
   );

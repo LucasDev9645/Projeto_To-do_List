@@ -5,7 +5,7 @@ import TodoList from "../../components/TodoList";
 const Home = () => {
   return (
     <>
-      <SideBar />
+      <SideBar showFilters={true} />
       <TodoList />
       <AddButton />
     </>

@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 import * as enums from "../../utils/enums/Tasks.ts";
-import Task from "../../models/Task.ts";
 import { register } from "../../Store/reducers/tasks.ts";
 
 import {
@@ -24,14 +23,14 @@ const Form = () => {
 
   const taskRegister = (e: FormEvent) => {
     e.preventDefault();
-    const addTask = new Task(
-      9,
-      title,
-      priority,
-      enums.Status.PENDENTE,
-      description
+    dispatch(
+      register({
+        title,
+        priority,
+        status: enums.Status.PENDENTE,
+        description,
+      })
     );
-    dispatch(register(addTask));
     navigate("/");
   };
 

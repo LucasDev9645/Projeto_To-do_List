@@ -1,6 +1,7 @@
 import * as enums from "../../utils/enums/Tasks";
 
 import styled from "styled-components";
+import { Button } from "../../styles/styles";
 
 type TagProps = {
   priority?: enums.Priority;
@@ -29,12 +30,18 @@ export const Card = styled.div`
   padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 10px;
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const Title = styled.h3`
   font-weight: 700;
   font-size: 1.125rem;
-  margin-bottom: 1rem;
+  margin-left: 0.5rem;
 `;
 
 export const Tag = styled.span<TagProps>`
@@ -65,18 +72,6 @@ export const Description = styled.textarea`
 export const StockBar = styled.div`
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 1rem;
-`;
-
-export const Button = styled.button`
-  padding: 0.5rem 0.75rem;
-  font-weight: 700;
-  font-size: 0.75rem;
-  color: var(--color-white);
-  border: none;
-  cursor: pointer;
-  background-color: var(--color-gray-900);
-  border-radius: 5px;
-  margin-right: 0.5rem;
 `;
 
 export const CancelRemoveButton = styled(Button)`
